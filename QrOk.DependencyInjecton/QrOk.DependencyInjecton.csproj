@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<PackageId>QrOkGenerator.DependencyInjection</PackageId>
+	<Title>QrOk.DependencyInjection</Title>
+	<Version>1.0.0</Version>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<Authors>Marcin Lipiński</Authors>
+	<Description>Dependency injection extension for the QrOk package.</Description>
+	<PackageProjectUrl>https://github.com/marcin-lipinski/qr-ok</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/marcin-lipinski/qr-ok</RepositoryUrl>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<None Include="..\README.md" Pack="true" PackagePath="\"/>
+	<None Include="..\LICENSE" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QrOk\QrOk.csproj" />
+  </ItemGroup>
+
+</Project>

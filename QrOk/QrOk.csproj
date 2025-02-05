@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>QrOkGenerator</PackageId>
+    <Title>QrOk</Title>
+    <Version>1.0.0</Version>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<Authors>Marcin Lipiński</Authors>
+	<Description>Free simple QR code generator for C#</Description>
+    <PackageProjectUrl>https://github.com/marcin-lipinski/qr-ok</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/marcin-lipinski/qr-ok</RepositoryUrl>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<None Include="..\README.md" Pack="true" PackagePath="\"/>
+	<None Include="..\LICENSE" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+</Project>

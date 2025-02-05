@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="BenchmarkDotNet" Version="0.14.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<ProjectReference Include="..\QrOk.DependencyInjecton\QrOk.DependencyInjecton.csproj" />
+	<ProjectReference Include="..\QrOk\QrOk.csproj" />
+  </ItemGroup>
+
+</Project>
